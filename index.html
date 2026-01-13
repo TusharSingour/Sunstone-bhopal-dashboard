@@ -75,7 +75,6 @@
   </div>
 </section>
 
-<!-- Faculty -->
 <section id="faculty" class="gray">
   <h2 class="section-title">Our Expert Faculty</h2>
 
@@ -128,6 +127,15 @@
       <p>Faculty —Assistant Profesor </p>
       <p>Qualification : B.Tech / M.Tech  </p>
       <p>Skills : • Web development • Python development • DBMS</p>
+    </div>
+
+    <div class="card">
+      <img src="image/Screenshot 2026-01-13 112907.png" class="avatar">
+      <h3>Prof. Komal Maurya </h3>
+      <p>Linkedin:<a href="https://www.linkedin.com/in/komal-m-997949104/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3ByxAD4syCT5Slpi3%2FYHyaVg%3D%3D">Komal Maurya</a></p>
+      <p>Faculty —Assistant Professor </p>
+      <p>Qualification : B.E / M.Tech  </p>
+      <p>Skills : • Web development • Python development • core Java • C Programing </p>
     </div>
 
   </div>
@@ -280,25 +288,15 @@
   </div>
 </section>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sunstone M-CAT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="mcat.css">
-</head>
-<body>
-
 <section id="mcat-section">
   <div class="mcat-container">
 
-    <span class="mcat-badge">SUNSTONE M-CAT 2026</span>
+    <span class="mcat-badge">SUNSTONE AMCAT 2026</span>
 
-    <h2 class="mcat-heading">Sunstone M-CAT</h2>
+    <h2 class="mcat-heading">Sunstone AMCAT</h2>
 
     <p class="mcat-description">
-      Sunstone M-CAT is an aptitude-based assessment designed to help students
+      Sunstone AMCAT is an aptitude-based assessment designed to help students
       prepare for aptitude tests and Mock Personal Interviews (PI).
       It evaluates analytical thinking, communication readiness, and overall career potential.
     </p>
@@ -321,11 +319,11 @@
       </div>
 
       <button type="submit" class="btn-primary">
-        Get M-CAT Link
+        Get MACAT Link
       </button>
 
       <a href="#" class="btn-secondary">
-        Know More About Sunstone M-CAT
+        Know More About Sunstone AMCAT
       </a>
 
       <p class="privacy-note">
@@ -337,8 +335,28 @@
   </div>
 </section>
 
-</body>
-</html>
+<section class="sunstone-life">
+  <div class="section-header">
+    <span class="section-tag">Campus Life</span>
+    <h2>Everyday Life of <span style="color:blue">Sunstone Students</span></h2>
+    <p>
+      A glimpse into daily campus experiences, practical learning,
+      collaboration, and student life at Sunstone Bhopal.
+    </p>
+  </div>
+
+  <div class="reel-wrapper" onclick="playReel()">
+    <video id="reelVideo" playsinline preload="metadata">
+      <source src="video/sunstone video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="play-overlay" id="tapOverlay">
+      ▶ Tap to Play
+    </div>
+  </div>
+</section>
+
 
 <section id="explore-official">
   <div class="explore-wrapper">
@@ -428,9 +446,6 @@
   <p>Website Created on: <strong>07 January 2026</strong></p>
 </footer>
 
-
-
-
 <script>
 function toggleSidebar(){
   document.getElementById("mySidebar").classList.toggle("active");
@@ -439,3 +454,14 @@ function toggleSidebar(){
 
 </body>
 </html>
+
+<script>
+  function playReel() {
+    const video = document.getElementById("reelVideo");
+    const overlay = document.getElementById("tapOverlay");
+
+    video.play();
+    video.controls = true;
+    overlay.style.opacity = "0";
+  }
+</script>
