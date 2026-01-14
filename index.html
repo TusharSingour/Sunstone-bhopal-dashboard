@@ -351,17 +351,25 @@
     </p>
   </div>
 
-  <div class="reel-wrapper" onclick="playReel()">
-    <video id="reelVideo" playsinline preload="metadata">
-      <source src="video/sunstone video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <div class="play-overlay" id="tapOverlay">
-      ▶ Tap to Play
+  <div class="reel-container">
+  
+    <div class="reel-wrapper" onclick="playReel(this)">
+      <video playsinline preload="metadata">
+        <source src="video/sunstone video.mp4" type="video/mp4">
+      </video>
+      <div class="play-overlay">▶ Tap to Play</div>
     </div>
+
+    <div class="reel-wrapper" onclick="playReel(this)">
+      <video playsinline preload="metadata">
+        <source src="video/sunstone video 2.mp4" type="video/mp4">
+      </video>
+      <div class="play-overlay">▶ Tap to Play</div>
+    </div>
+
   </div>
 </section>
+
 
 <section class="clubs-container">
     <div class="header-content">
@@ -491,21 +499,17 @@
 </footer>
 
 <script>
-function toggleSidebar(){
-  document.getElementById("mySidebar").classList.toggle("active");
+function playReel(wrapper) {
+  const video = wrapper.querySelector("video");
+  const overlay = wrapper.querySelector(".play-overlay");
+
+  if (video.paused) {
+    video.play();
+    overlay.style.opacity = "0";
+  } else {
+    video.pause();
+    overlay.style.opacity = "1";
+  }
 }
 </script>
 
-</body>
-</html>
-
-<script>
-  function playReel() {
-    const video = document.getElementById("reelVideo");
-    const overlay = document.getElementById("tapOverlay");
-
-    video.play();
-    video.controls = true;
-    overlay.style.opacity = "0";
-  }
-</script>

@@ -748,7 +748,6 @@ section{padding:60px 5%;}
   font-size: 28px;
   font-weight: 700;
   color: #1a1a1a;
-  margin: 8px 0 12px;
 }
 
 .section-header p {
@@ -757,11 +756,18 @@ section{padding:60px 5%;}
   color: #555;
 }
 
+/* Reel Layout */
+.reel-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Reel Frame */
 .reel-wrapper {
   width: 320px;
-  height: 568px; /* 9:16 */
-  margin: 0 auto;
+  height: 568px;
   border-radius: 24px;
   overflow: hidden;
   position: relative;
@@ -776,7 +782,7 @@ section{padding:60px 5%;}
   object-fit: cover;
 }
 
-/* Tap to Play Overlay */
+/* Tap Overlay */
 .play-overlay {
   position: absolute;
   inset: 0;
@@ -789,6 +795,7 @@ section{padding:60px 5%;}
   font-weight: 500;
   transition: opacity 0.3s ease;
 }
+
 
 :root {
     --primary-blue: #0056b3;
