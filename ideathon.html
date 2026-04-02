@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideathon 2026 - Sunstone Bhopal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { background-color: #0f172a; color: #f8fafc; } /* Dark Professional Theme */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+        }
+        .back-link { color: #f37021; text-decoration: none; font-size: 1.2rem; }
+
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #f37021;
+        }
+
+        .hero-section h1 { font-size: 2rem; letter-spacing: 1px; color: #fff; }
+        .hero-section p { color: #cbd5e1; font-size: 0.9rem; margin-top: 5px; }
+
+        .main-card {
+            max-width: 92%;
+            margin: -30px auto 40px auto;
+            background: #ffffff;
+            color: #1e293b;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .location-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f1f5f9;
+            padding: 8px 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: #475569;
+            width: 100%;
+        }
+        .location-tag i { color: #f37021; }
+
+        .section-h3 {
+            color: #1a4a8e;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Perks Grid */
+        .perks-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .perk-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .perk-card i { color: #f37021; font-size: 1.5rem; margin-bottom: 8px; }
+        .perk-card span { display: block; font-size: 0.8rem; font-weight: 600; color: #1e293b; }
+
+        /* Mentors Avatar Group */
+        .mentors-group {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background: #cbd5e1;
+            margin-right: -12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: #1a4a8e;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 20px rgba(26, 74, 142, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i></a>
+        <div style="font-weight: bold; font-size: 1rem;">IDEATHON 2026</div>
+        <i class="fa-solid fa-share-nodes"></i>
+    </header>
+
+    <div class="hero-section">
+        <h1>Startup Ideathon</h1>
+        <p>Innovation • Collaboration • Success</p>
+    </div>
+
+    <div class="main-card">
+        <div class="location-tag">
+            <i class="fa-solid fa-map-pin"></i>
+            <span><strong>Innovation Lab,</strong> Sunstone Bhopal</span>
+        </div>
+
+        <h3 class="section-h3"><i class="fa-solid fa-rocket"></i> About Event</h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: #555;">
+            Apne startup ideas ko pitch karein aur payein mauka industry experts se milne ka. Ye portal aapko mentors ke saath collaborate karne aur networking karne mein madad karega.
+        </p>
+
+        <h3 class="section-h3"><i class="fa-solid fa-gift"></i> What's in it?</h3>
+        <div class="perks-container">
+            <div class="perk-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Mentorship</span>
+            </div>
+            <div class="perk-card">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Networking</span>
+            </div>
+            <div class="perk-card">
+                <i class="fa-solid fa-award"></i>
+                <span>Prize Pool</span>
+            </div>
+            <div class="perk-card">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Certificates</span>
+            </div>
+        </div>
+
+        <h3 class="section-h3"><i class="fa-solid fa-user-tie"></i> Key Mentors</h3>
+        <div class="mentors-group">
+            <div class="avatar">JD</div>
+            <div class="avatar">AK</div>
+            <div class="avatar">RS</div>
+            <div class="avatar" style="background: #f37021; color: white;">+8</div>
+            <span style="margin-left: 25px; font-size: 0.8rem; color: #64748b;">Top Founders & Experts</span>
+        </div>
+
+        <a href="#" class="cta-button">Register Your Idea</a>
+    </div>
+
+</body>
+</html>

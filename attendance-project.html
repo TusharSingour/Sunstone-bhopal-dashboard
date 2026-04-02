@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details - Sunstone Bhopal</title>
+    <title>E-Learning Portal - Sunstone Bhopal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        * { margin: 0;
-             padding: 0;
-              box-sizing: border-box;
-               font-family: 'Segoe UI', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         
         body { background-color: #fcfcfc; }
 
@@ -21,22 +18,30 @@
             background: white;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .logo { font-weight: bold;
-             font-size: 1.2rem;
-              color: #1a4a8e;
-               text-decoration: none;
-             }
-        .logo span { 
-            color: #f37021;
-         }
+        .logo { font-weight: bold; font-size: 1.2rem; color: #1a4a8e; text-decoration: none; }
+        .logo span { color: #f37021; }
 
         .top-banner {
-            background-color: #1a4a8e;
+            background: #1a4a8e;
             padding: 60px 20px;
             text-align: center;
             color: white;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative circle for a learning vibe */
+        .top-banner::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(243, 112, 33, 0.2);
+            border-radius: 50%;
         }
 
         .project-container {
@@ -46,14 +51,8 @@
             padding: 25px;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        .back-link {
-            color: #f37021;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 15px;
+            position: relative;
+            z-index: 10;
         }
 
         .project-title {
@@ -67,26 +66,36 @@
         }
 
         .tech-tags span {
-            background: #f0f4f8;
+            background: #eef2f7;
             color: #1a4a8e;
             padding: 5px 12px;
             border-radius: 15px;
             font-size: 0.8rem;
             margin-right: 8px;
-            border: 1px solid #d1d9e6;
+            font-weight: 500;
         }
 
-        .project-img {
+        .project-img-box {
             width: 100%;
+            height: 180px;
+            background: #f8f9fa;
+            border: 2px dashed #d1d9e6;
             border-radius: 15px;
             margin-bottom: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #adb5bd;
         }
 
         .content-h3 {
             color: #f37021;
             margin: 20px 0 10px 0;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .description {
@@ -94,6 +103,23 @@
             line-height: 1.6;
             font-size: 0.95rem;
         }
+
+        .learning-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #fff9f5;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #f37021;
+        }
+
+        .stat-card h4 { color: #1a4a8e; font-size: 0.9rem; margin-bottom: 5px; }
+        .stat-card p { color: #666; font-size: 0.8rem; }
 
         .action-btn {
             display: block;
@@ -106,9 +132,8 @@
             text-decoration: none;
             font-weight: bold;
             margin-top: 30px;
-            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(243, 112, 33, 0.3);
         }
-        .action-btn:hover { background: #d65d1a; }
 
     </style>
 </head>
@@ -117,38 +142,51 @@
     <header>
         <a href="index.html" class="logo"><i class="fa-solid fa-chevron-left"></i> PROJECT<span> DETAILS</span></a>
         <div class="header-icons">
-            <i class="fa-solid fa-share-nodes"></i>
+            <i class="fa-solid fa-bookmark"></i>
         </div>
     </header>
 
     <div class="top-banner">
-       
+       <i class="fa-solid fa-graduation-cap fa-3x"></i>
+       <p style="margin-top: 10px; opacity: 0.9;">Knowledge at your fingertips</p>
     </div>
 
     <div class="project-container">
         
-        <h1 class="project-title">Smart Attendance System</h1>
+        <h1 class="project-title">EduStream Portal</h1>
         
         <div class="tech-tags">
-            <span>Python</span>
-            <span>OpenCV</span>
-            <span>AI/ML</span>
+            <span>MERN Stack</span>
+            <span>Redux</span>
+            <span>AWS S3</span>
         </div>
 
-        <h3 class="content-h3">About the Project</h3>
+        <h3 class="content-h3"><i class="fa-solid fa-book-open"></i> Project Overview</h3>
         <p class="description">
-            Ye ek advanced AI-driven system hai jo face recognition ka upyog karke students ki attendance auto-mark karta hai. Isse proxy attendance aur manual errors bilkul khatam ho jate hain.
+            Ye ek comprehensive E-Learning platform hai jahan instructors video courses upload kar sakte hain aur students apni progress track kar sakte hain. Isme interactive quizzes aur certification ka feature bhi shamil hai.
         </p>
 
-        <h3 class="content-h3">Key Features</h3>
-        <p class="description">
-            • Real-time Face Recognition<br>
-            • Automated Attendance Reports<br>
-            • Secure Cloud Database Integration<br>
-            • Interactive Admin Dashboard
-        </p>
+        <h3 class="content-h3"><i class="fa-solid fa-lightbulb"></i> Modules</h3>
+        <div class="learning-stats">
+            <div class="stat-card">
+                <h4>Student Dashboard</h4>
+                <p>Course progress tracking & results.</p>
+            </div>
+            <div class="stat-card">
+                <h4>Instructor Panel</h4>
+                <p>Easy video upload & student analytics.</p>
+            </div>
+            <div class="stat-card">
+                <h4>Quiz System</h4>
+                <p>Automated grading & feedback.</p>
+            </div>
+            <div class="stat-card">
+                <h4>Resources</h4>
+                <p>PDF notes & downloadable assets.</p>
+            </div>
+        </div>
 
-        <a href="#" class="action-btn">View Live Demo</a>
+        <a href="#" class="action-btn">Start Learning Demo</a>
     </div>
 
 </body>

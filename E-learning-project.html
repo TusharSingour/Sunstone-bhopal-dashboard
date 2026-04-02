@@ -3,71 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning Dashboard | Project Details</title>
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>E-Learning Portal - Sunstone Bhopal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        body { background-color: #fcfcfc; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo { font-weight: bold; font-size: 1.2rem; color: #1a4a8e; text-decoration: none; }
+        .logo span { color: #f37021; }
+
+        .top-banner {
+            background: #1a4a8e;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative circle for a learning vibe */
+        .top-banner::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(243, 112, 33, 0.2);
+            border-radius: 50%;
+        }
+
+        .project-container {
+            max-width: 90%;
+            margin: -40px auto 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .project-title {
+            color: #1a4a8e;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .tech-tags {
+            margin-bottom: 20px;
+        }
+
+        .tech-tags span {
+            background: #eef2f7;
+            color: #1a4a8e;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        .project-img-box {
+            width: 100%;
+            height: 180px;
+            background: #f8f9fa;
+            border: 2px dashed #d1d9e6;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #adb5bd;
+        }
+
+        .content-h3 {
+            color: #f37021;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .learning-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #fff9f5;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #f37021;
+        }
+
+        .stat-card h4 { color: #1a4a8e; font-size: 0.9rem; margin-bottom: 5px; }
+        .stat-card p { color: #666; font-size: 0.8rem; }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            background: #f37021;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(243, 112, 33, 0.3);
+        }
+
+    </style>
 </head>
 <body>
 
     <header>
- <a href="index.html" class="logo"><i class="fa-solid fa-chevron-left"></i> PROJECT<span> DETAILS</span></a>        <div class="nav-icons">
-            <a href="index.html" style="color:white; text-decoration:none; font-size:14px;">
-                <i class="fas fa-arrow-left"></i> Back to Home
-            </a>
+        <a href="index.html" class="logo"><i class="fa-solid fa-chevron-left"></i> PROJECT<span> DETAILS</span></a>
+        <div class="header-icons">
+            <i class="fa-solid fa-bookmark"></i>
         </div>
     </header>
 
-    <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+    <div class="top-banner">
+       <i class="fa-solid fa-graduation-cap fa-3x"></i>
+       <p style="margin-top: 10px; opacity: 0.9;">Knowledge at your fingertips</p>
+    </div>
+
+    <div class="project-container">
         
-        <div class="card" style="max-width: 850px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; border-radius: 20px;">
-            <img src="image/e learning.jpg" style="width: 100%; height: 320px; object-fit: cover;">
-            
-            <div style="padding: 35px;">
-                <h2 style="color: #2c3e50; margin-bottom: 12px;">E-Learning Student Analytics Dashboard</h2>
-                <p style="color: #555; line-height: 1.7; font-size: 1.05rem;">
-                    Yeh project students ki academic performance ko track karne ke liye design kiya gaya hai. Isme ek hi screen par attendance, grades, aur course progress ka pura data visual form (Charts) mein dikhaya jata hai.
-                </p>
+        <h1 class="project-title">EduStream Portal</h1>
+        
+        <div class="tech-tags">
+            <span>MERN Stack</span>
+            <span>Redux</span>
+            <span>AWS S3</span>
+        </div>
 
-                <hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;">
+        <h3 class="content-h3"><i class="fa-solid fa-book-open"></i> Project Overview</h3>
+        <p class="description">
+            Ye ek comprehensive E-Learning platform hai jahan instructors video courses upload kar sakte hain aur students apni progress track kar sakte hain. Isme interactive quizzes aur certification ka feature bhi shamil hai.
+        </p>
 
-                <h3 style="margin-bottom: 15px; color: #333;"><i class="fas fa-star" style="color: #f1c40f;"></i> Project Highlights</h3>
-                
-                <div class="grid-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 0;">
-                    <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #3498db;">
-                        <strong>Real-time Progress:</strong> Live tracking of completed modules and pending assignments.
-                    </div>
-                    <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #9b59b6;">
-                        <strong>Data Visualization:</strong> Using Charts/Graphs to show marks and attendance trends.
-                    </div>
-                    <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #2ecc71;">
-                        <strong>Mobile Responsive:</strong> Students can check their status on any device smoothly.
-                    </div>
-                    <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #e67e22;">
-                        <strong>Profile Management:</strong> Easy access to certificates and academic history.
-                    </div>
-                </div>
-
-                <div style="background: #f1f3f5; padding: 25px; border-radius: 12px; margin-top: 35px;">
-                    <h4 style="margin-bottom: 15px;">Technical Stack:</h4>
-                    <div class="tags">
-                        <span style="background:#fff; color:#333; padding: 8px 18px; border: 1px solid #ddd; border-radius: 5px;">React.js</span>
-                        <span style="background:#fff; color:#333; padding: 8px 18px; border: 1px solid #ddd; border-radius: 5px;">Chart.js</span>
-                        <span style="background:#fff; color:#333; padding: 8px 18px; border: 1px solid #ddd; border-radius: 5px;">REST API</span>
-                        <span style="background:#fff; color:#333; padding: 8px 18px; border: 1px solid #ddd; border-radius: 5px;">CSS Grid</span>
-                    </div>
-                </div>
-
-                <div style="margin-top: 35px; display: flex; gap: 20px;">
-                    <button class="view-btn" style="padding: 14px 30px; font-weight: bold;">Open Dashboard</button>
-                    <button class="outline-btn" style="padding: 14px 30px; border: 2px solid #2c3e50; background: transparent; cursor: pointer;">Download Report</button>
-                </div>
+        <h3 class="content-h3"><i class="fa-solid fa-lightbulb"></i> Modules</h3>
+        <div class="learning-stats">
+            <div class="stat-card">
+                <h4>Student Dashboard</h4>
+                <p>Course progress tracking & results.</p>
+            </div>
+            <div class="stat-card">
+                <h4>Instructor Panel</h4>
+                <p>Easy video upload & student analytics.</p>
+            </div>
+            <div class="stat-card">
+                <h4>Quiz System</h4>
+                <p>Automated grading & feedback.</p>
+            </div>
+            <div class="stat-card">
+                <h4>Resources</h4>
+                <p>PDF notes & downloadable assets.</p>
             </div>
         </div>
 
+        <a href="#" class="action-btn">Start Learning Demo</a>
     </div>
-
-    <footer class="site-footer">
-        <p>E-Learning Project Documentation | <strong>Sunstone Bhopal Campus</strong></p>
-    </footer>
 
 </body>
 </html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Cult Fest 2026 - Sunstone Bhopal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', 'Segoe UI', sans-serif; }
+        
+        body { background-color: #f8fafc; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 2px solid #f1f5f9;
+        }
+        .back-link { color: #1a4a8e; text-decoration: none; font-size: 1.2rem; }
+
+        /* Festive Gradient Banner */
+        .fest-banner {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            padding: 70px 20px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 10px 20px rgba(168, 85, 247, 0.2);
+        }
+
+        .fest-banner h1 { font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .fest-banner p { font-size: 0.9rem; opacity: 0.9; margin-top: 5px; font-weight: 300; }
+
+        .content-card {
+            max-width: 92%;
+            margin: -35px auto 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .quick-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            background: #fdf2f8;
+            padding: 12px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #fbcfe8;
+        }
+        .info-box i { color: #ec4899; font-size: 1.2rem; }
+        .info-box div span { display: block; font-size: 0.7rem; color: #64748b; }
+        .info-box div strong { font-size: 0.85rem; color: #1e293b; }
+
+        .section-label {
+            color: #1a4a8e;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Event Categories Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .category-item {
+            padding: 20px 10px;
+            border-radius: 18px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #f1f5f9;
+        }
+        .category-item i { font-size: 1.8rem; margin-bottom: 10px; display: block; }
+        .category-item span { font-weight: 600; font-size: 0.85rem; }
+
+        /* Specific colors for categories */
+        .tech { background: #eff6ff; color: #2563eb; }
+        .music { background: #fff7ed; color: #ea580c; }
+        .gaming { background: #f0fdf4; color: #16a34a; }
+        .dance { background: #faf5ff; color: #9333ea; }
+
+        .fest-description {
+            font-size: 0.95rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 15px;
+        }
+
+        .fest-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link"><i class="fa-solid fa-chevron-left"></i></a>
+        <span style="font-weight: 700; color: #1a4a8e;">FEST DETAILS</span>
+        <i class="fa-solid fa-heart" style="color: #ec4899;"></i>
+    </header>
+
+    <div class="fest-banner">
+        <h1>Mega Fest 2026</h1>
+        <p>Innovation meets Celebration</p>
+    </div>
+
+    <div class="content-card">
+        <div class="quick-info">
+            <div class="info-box">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <div>
+                    <span>Venue</span>
+                    <strong>Open Theatre</strong>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <span>Starts At</span>
+                    <strong>09:30 AM</strong>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-label"><i class="fa-solid fa-star"></i> About the Mega Fest</h3>
+        <p class="fest-description">
+            Taiyar ho jaiye saal ke sabse bade event ke liye! Tech-Cult Fest 2026 mein aapko milenge exciting coding challenges, gaming tournaments, aur shaam ko ek grand musical night.
+        </p>
+
+        <h3 class="section-label"><i class="fa-solid fa-bolt"></i> Event Zones</h3>
+        <div class="category-grid">
+            <div class="category-item tech">
+                <i class="fa-solid fa-code"></i>
+                <span>Coding Battle</span>
+            </div>
+            <div class="category-item gaming">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>ESports Arena</span>
+            </div>
+            <div class="category-item music">
+                <i class="fa-solid fa-music"></i>
+                <span>Musical Night</span>
+            </div>
+            <div class="category-item dance">
+                <i class="fa-solid fa-masks-theater"></i>
+                <span>Cultural Act</span>
+            </div>
+        </div>
+
+        <a href="#" class="fest-btn">Get Your Fest Pass</a>
+    </div>
+
+</body>
+</html>

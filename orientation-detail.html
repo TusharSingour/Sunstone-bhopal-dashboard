@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation 2026 - Sunstone Bhopal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { background-color: #f4f7f6; color: #333; }
+
+        /* Different Header Style */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+        }
+
+        .back-btn { color: #1a4a8e; text-decoration: none; font-size: 1.1rem; }
+
+        /* New Banner Design: Minimalist with a focus on text */
+        .welcome-section {
+            background: linear-gradient(rgba(26, 74, 142, 0.8), rgba(26, 74, 142, 0.9)), 
+                        url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .welcome-section h1 { font-size: 2.2rem; margin-bottom: 10px; }
+        .welcome-section p { font-weight: 300; letter-spacing: 1px; }
+
+        .detail-card {
+            max-width: 90%;
+            margin: -30px auto 30px auto;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-item { text-align: center; }
+        .info-item i { color: #f37021; font-size: 1.5rem; margin-bottom: 5px; }
+        .info-item span { display: block; font-size: 0.8rem; color: #888; }
+        .info-item strong { font-size: 0.95rem; color: #1a4a8e; }
+
+        /* Timeline Section - The "Different" Element */
+        .timeline-title { color: #1a4a8e; margin-bottom: 20px; font-size: 1.3rem; }
+        
+        .timeline {
+            border-left: 2px dashed #f37021;
+            margin-left: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-event {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #f37021;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .timeline-event h4 { font-size: 1rem; color: #333; }
+        .timeline-event p { font-size: 0.85rem; color: #666; }
+
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #f37021;
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .cta-btn:active { transform: scale(0.98); }
+    </style>
+</head>
+<body>
+
+    <div class="glass-header">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <span style="font-weight: 600; color: #1a4a8e;">Freshers Orientation</span>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: #666;"></i>
+    </div>
+
+    <div class="welcome-section">
+        <p>WELCOME TO THE FAMILY</p>
+        <h1>Batch of 2026</h1>
+    </div>
+
+    <div class="detail-card">
+        <div class="info-row">
+            <div class="info-item">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Date</span>
+                <strong>Aug 15, 2026</strong>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Time</span>
+                <strong>10:00 AM</strong>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Venue</span>
+                <strong>Auditorium</strong>
+            </div>
+        </div>
+
+        <h3 class="timeline-title">Event Schedule</h3>
+        
+        <div class="timeline">
+            <div class="timeline-event">
+                <h4>Inauguration & Lamp Lighting</h4>
+                <p>Welcome speech by the Director and Chief Guest.</p>
+            </div>
+            <div class="timeline-event">
+                <h4>Academic Introduction</h4>
+                <p>Understanding the Sunstone curriculum & policies.</p>
+            </div>
+            <div class="timeline-event">
+                <h4>Interactive Ice-Breaker</h4>
+                <p>Fun activities to connect with your fellow classmates.</p>
+            </div>
+            <div class="timeline-event">
+                <h4>High Tea & Networking</h4>
+                <p>Informal session with faculty and seniors.</p>
+            </div>
+        </div>
+
+        <a href="#" class="cta-btn">
+            <i class="fa-solid fa-download"></i> Download Full Brochure
+        </a>
+    </div>
+
+</body>
+</html>

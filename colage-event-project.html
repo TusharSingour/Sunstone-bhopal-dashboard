@@ -3,74 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Details | Sunstone Bhopal</title>
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Event Portal - Sunstone Bhopal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        body { background-color: #fcfcfc; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo { font-weight: bold; font-size: 1.2rem; color: #1a4a8e; text-decoration: none; }
+        .logo span { color: #f37021; }
+
+        .top-banner {
+            background: linear-gradient(135deg, #1a4a8e 0%, #f37021 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .project-container {
+            max-width: 90%;
+            margin: -40px auto 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            color: #1a4a8e;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .tech-tags {
+            margin-bottom: 20px;
+        }
+
+        .tech-tags span {
+            background: #fff5ef;
+            color: #f37021;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            border: 1px solid #ffdec9;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #eee;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .content-h3 {
+            color: #f37021;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #444;
+        }
+
+        .feature-list i {
+            color: #1a4a8e;
+            font-size: 0.9rem;
+        }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            background: #1a4a8e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+        .action-btn:hover { background: #123466; transform: translateY(-2px); }
+
+    </style>
 </head>
 <body>
 
     <header>
- <a href="index.html" class="logo"><i class="fa-solid fa-chevron-left"></i> PROJECT<span> DETAILS</span></a>        <div class="nav-icons">
-            <a href="index.html" style="color:white; text-decoration:none; font-size:14px;">
-                <i class="fas fa-arrow-left"></i> Back to Home
-            </a>
+        <a href="index.html" class="logo"><i class="fa-solid fa-chevron-left"></i> PROJECT<span> DETAILS</span></a>
+        <div class="header-icons">
+            <i class="fa-solid fa-share-nodes"></i>
         </div>
     </header>
 
-    <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-        
-        <div class="card" style="max-width: 800px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden;">
-            <img src="image/event portal.jpg" style="width: 100%; height: 300px; object-fit: cover;">
-            
-            <div style="padding: 30px;">
-                <h2 style="color: #333;
-                 margin-bottom: 10px;">College Event Portal - Management System</h2>
-                <p style="color: #666;
-                 line-height: 1.6;
-                  margin-bottom: 20px;">
-                    Yeh ek digital platform hai jo campus events ko organize aur manage karne ke liye banaya gaya hai. 
-                    Isse students asani se aane wale events ki jankari le sakte hain aur register kar sakte hain.
-                </p>
-
-                <hr style="border: 0;
-                 border-top: 1px solid #eee;
-                  margin: 20px 0;">
-
-                <h3 style="margin-bottom: 15px;">Key Features (Khas Baatein):</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: green;"></i> **Event Registration:** Online form bharke seat reserve karein.</li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: green;"></i> **Live Updates:** Event ki date aur time ka turant pata chale.</li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: green;"></i> **Digital Passes:** Registration ke baad QR-code ya confirmation milna.</li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: green;"></i> **Responsive Design:** Mobile aur Laptop dono par smoothly chalta hai.</li>
-                </ul>
-
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 30px;">
-                    <h4>Project Technologies:</h4>
-                    <div class="tags" style="margin-top: 10px;">
-                        <span style="background:#e1e1e1;
-                         padding: 5px 15px;
-                          border-radius: 20px;
-                          ">HTML5</span>
-                        <span style="background:#e1e1e1;
-                         padding: 5px 15px;
-                          border-radius: 20px;">CSS3</span>
-                        <span style="background:#e1e1e1;
-                         padding: 5px 15px;
-                          border-radius: 20px;">JavaScript</span>
-                    </div>
-                </div>
-
-                <div style="margin-top: 30px; display: flex; gap: 15px;">
-                    <button class="view-btn" style="padding: 12px 25px;">Live Preview</button>
-                    <button class="outline-btn" style="padding: 12px 25px; border: 1px solid #333;">Source Code</button>
-                </div>
-            </div>
-        </div>
-
+    <div class="top-banner">
+       <i class="fa-solid fa-calendar-check fa-3x"></i>
     </div>
 
-    <footer class="site-footer">
-        <p>Project Details Page | Designed by <strong>Tushar Singour</strong></p>
-    </footer>
+    <div class="project-container">
+        
+        <h1 class="project-title">College Event Portal</h1>
+        
+        <div class="tech-tags">
+            <span>React JS</span>
+            <span>Firebase</span>
+            <span>Tailwind CSS</span>
+        </div>
+
+        <h3 class="content-h3"><i class="fa-solid fa-circle-info"></i> About the Project</h3>
+        <p class="description">
+            Ye portal college events ko manage karne ka ek single platform hai. Students isme upcoming fests, workshops aur seminars ke liye register kar sakte hain aur organizers registrations ko monitor kar sakte hain.
+        </p>
+
+        <h3 class="content-h3"><i class="fa-solid fa-star"></i> Key Features</h3>
+        <ul class="feature-list description">
+            <li><i class="fa-solid fa-check"></i> Online Registration & E-Tickets</li>
+            <li><i class="fa-solid fa-check"></i> Event Schedule & Speaker Profiles</li>
+            <li><i class="fa-solid fa-check"></i> Real-time Notification Updates</li>
+            <li><i class="fa-solid fa-check"></i> Admin Panel for Attendance Tracking</li>
+        </ul>
+
+        <a href="#" class="action-btn">Open Portal Demo</a>
+    </div>
 
 </body>
 </html>
