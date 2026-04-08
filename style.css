@@ -1047,7 +1047,6 @@ section{padding:60px 5%;}
     line-height: 1.6;
 }
 
-/* Video Grid Styles */
 .video-frames-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1086,7 +1085,6 @@ section{padding:60px 5%;}
     width: 100%;
 }
 
-/* Nomination Card Styles */
 .nomination-card-premium {
     background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
     border: 1px solid #e1e1e1;
@@ -1136,7 +1134,6 @@ section{padding:60px 5%;}
     min-width: 150px;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .nomination-card-premium {
         flex-direction: column;
@@ -1150,6 +1147,35 @@ section{padding:60px 5%;}
         padding-top: 20px;
         text-align: center;
     }
+}
+
+.play-btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: 0.3s ease;
+    pointer-events: none; /* Isse click seedha video pe jayega */
+    z-index: 5;
+}
+
+.video-frame.playing .play-btn-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.video-frame:hover .play-btn-overlay {
+    background: rgba(255, 0, 0, 0.8); /* Red touch for Sunstone vibe */
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 /* --- P2P Learning Section --- */
@@ -1268,7 +1294,6 @@ section{padding:60px 5%;}
     font-size: 14px;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .p2p-video-grid {
         grid-template-columns: 1fr;
@@ -1279,3 +1304,28 @@ section{padding:60px 5%;}
     }
 }
 
+.p2p-video-frame.playing .play-btn-overlay,
+.video-frame.playing .play-btn-overlay {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.play-btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
